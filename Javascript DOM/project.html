@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="amount-container">
+        <div class="deposit money">
+            <div>
+                <h1>Deposit</h1>
+                <h3 id="deposit-val">0.00</h3>
+            </div>
+        </div>
+        <div class="withdraw money">
+            <div>
+                <h1>Withdraw</h1>
+                <h3 id="withdraw-val">0.00</h3>
+            </div>
+        </div>
+        <div class="total money">
+            <div>
+                <h1>Total</h1>
+                <h3 id="total-val">0.00</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="withdraw-deposit-container">
+        <div class="amount withdraw-tk">
+            <input id="input-val" class="input-tk" type="number"  placeholder="enter amount">
+            <br/>
+            <button onclick="handleDeposit()" class="deposit-btn">deposit</button>
+        </div>
+        <div class="amount deposit-tk">
+            <input id="inputVal" class="input-tk" type="number" placeholder="enter amount">
+            <br/>
+            <button onclick="handleWithdraw()" class="withdraw-btn">withdraw</button>
+        </div>
+    </div>
+
+
+    <!-- My script file is here  -->
+    <script src="/project.js"></script>
+</body>
+</html>
